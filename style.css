@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+body {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #2c3e50, #4d4855, #170e13, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.titulo {
+  font-size: 100px;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+section {
+  margin-left: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+ul {
+  max-width: 90%;
+  text-align: justify;
+}
+
+li {
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden-reverse {
+  transform: translateX(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.animation-container {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.animation-box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f77b7b, #86a8e7);
+}
+
+.box-1 {
+  animation: box1-animation 1s ease-in-out infinite;
+}
+
+.box-2 {
+  animation: box2-animation 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.box-3 {
+  animation: box3-animation 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.box-4 {
+  animation: box4-animation 1s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes box1-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box2-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes box3-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes box4-animation {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  25% {
+    transform: scale(1.5) translateX(25px);
+  }
+  50% {
+    transform: scale(2) translateX(50px);
+  }
+  75% {
+    transform: scale(1.5) translateX(75px);
+  }
+  100% {
+    transform: scale(1) translateX(100px);
+  }
+}
