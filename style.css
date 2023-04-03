@@ -91,7 +91,7 @@ li {
 .box-2 {
   background: linear-gradient(to right, #9a208c, #d27685);
   place-self: flex-start;
-  animation: box2-animation 1s ease-in-out infinite;
+  animation: box2-animation 4s ease-in-out infinite;
 }
 
 .box-3 {
