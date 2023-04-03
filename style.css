@@ -81,26 +81,28 @@ li {
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #f77b7b, #86a8e7);
 }
 
 .box-1 {
-  animation: box1-animation 1s ease-in-out infinite;
+  background: linear-gradient(to right, #f77b7b, #86a8e7);
+  animation: box1-animation 4s ease-in-out infinite;
 }
 
 .box-2 {
+  background: linear-gradient(to right, #9a208c, #d27685);
+  place-self: flex-start;
   animation: box2-animation 1s ease-in-out infinite;
-  animation-delay: 0.2s;
 }
 
 .box-3 {
+  background: linear-gradient(to right, #0e8388, #3795bd);
   animation: box3-animation 1s ease-in-out infinite;
-  animation-delay: 0.4s;
 }
 
 .box-4 {
+  background: linear-gradient(to right, #ff8400, #ffd93d);
+  place-self: flex-end;
   animation: box4-animation 1s ease-in-out infinite;
-  animation-delay: 0.6s;
 }
 
 @keyframes box1-animation {
@@ -108,7 +110,7 @@ li {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(50px);
+    transform: translateX(300px);
   }
   100% {
     transform: translateX(0);
@@ -120,7 +122,7 @@ li {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(200px);
   }
   100% {
     transform: translateY(0);
@@ -150,9 +152,9 @@ li {
     transform: scale(2) translateX(50px);
   }
   75% {
-    transform: scale(1.5) translateX(75px);
+    transform: scale(1.5) translateX(100px);
   }
   100% {
-    transform: scale(1) translateX(100px);
+    transform: scale(1) translateX(150px);
   }
 }
